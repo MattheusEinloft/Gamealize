@@ -1,0 +1,61 @@
+.responsive-logo {
+    margin-left: 1%;
+}
+
+.gamealize-logo {
+    /* font-size: calc(3vw + 3vh + .3vmin); */
+    text-shadow: none;
+}
+
+.gamealize-logo:hover {
+    font-size: 2.2em;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+/* body {
+    background-image: url(../img/background.jpg);
+    background-position: center top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+} */
+
+body, html {
+    height: 100%;
+}
+  
+.bg { 
+    /* The image used */
+    background-image: url(../img/background.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shadow-text {
+    font-size: calc(0.9vw + 0.9vh + .2vmin);
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
