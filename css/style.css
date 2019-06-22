@@ -1,5 +1,9 @@
-.responsive-logo {
-    margin-left: 1%;
+#menu {
+    background: rgba(33, 33, 33, 0.8);
+}
+
+.logoTeste {
+    font-size: 50px;
 }
 
 .gamealize-logo {
@@ -9,11 +13,12 @@
 
 .gamealize-logo:hover {
     font-size: 2.2em;
-    text-shadow: 
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
+    color: #4fc3f7;
+    /* text-shadow: 
+        -1px -1px 0 #4fc3f7,
+        1px -1px 0 #4fc3f7,
+        -1px 1px 0 #4fc3f7,
+        1px 1px 0 #4fc3f7; */
 }
 
 /* body {
@@ -26,8 +31,8 @@
 body, html {
     height: 100%;
 }
-  
-.bg { 
+
+.hero-background {
     /* The image used */
     background-image: url(../img/background.jpg);
 
@@ -58,4 +63,19 @@ body, html {
         1px -1px 0 #000,
         -1px 1px 0 #000,
         1px 1px 0 #000;
+}
+
+/* ---------------------------------------------------------- */
+
+/* Page Registration */
+
+.bg {
+    /* Full height */
+    height: 100%;
+}
+
+.registration-box {
+    background-color: red;
+
+    margin-top: 50px;
 }
