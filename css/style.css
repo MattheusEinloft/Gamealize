@@ -73,9 +73,16 @@ body, html {
     font-size: calc(5px + 1.3vw);
 }
 
+/* .icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+    font-size: inherit;
+  } */
+
 /* ---------------------------------------------------------- */
 
-/* Page Registration */
+/* Registration */
 
 .bg {
     /* Full height */
@@ -92,4 +99,23 @@ body, html {
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size: calc(5px + 1.5vw);
     /* font-weight: bold; */
+}
+
+/* ---------------------------------------------------------- */
+
+/* About Us */
+
+.profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+
+.profile-picture:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    transition: all .2s ease-in-out; 
 }
