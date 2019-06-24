@@ -7,54 +7,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Gamealize</title>
 
-    <!--Import materialize.css-->
+    <!-- MATERIALIZE CSS -->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+
+    <!-- STYLE CSS -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIAL ICONS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-    <nav id="menu" class="nav-wrapper">
-        <div class="row">
-            <div class="col s4">
-                <a class="brand-logo" href="index.html"><img class="gamealize-logo" src="img/logo.png"
-                        alt="Gamealize Logo"></a>
+    <!-- NAVBAR -->
+    <nav id="menu">
+        <div class="nav-wrapper">
+            <!-- MOBILE MENU ICON -->
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            <!-- DESKTOP MENU -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col s4 hide-on-med-and-down">
+                    <a class="brand-logo" href="index.html"><img class="gamealize-logo" src="img/logo.png"
+                            alt="Gamealize Logo"></a>
+                </div>
+
+                <!-- ITEMS -->
+                <div class="col s8">
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="active"><a href="team.html">Nossa Equipe</a></li>
+                        <li><a href="index.html#como-funciona">Como funciona?</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="registration.html">Cadastrar-se</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col s8">
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html#como-funciona">Como funciona?</a></li>
-                    <li><a href="team.html">Nossa Equipe</a></li>
-                    <li><a href="#contato">Entre em Contato</a></li>
-                </ul>
-            </div>
+            <!-- MOBILE MENU -->
+            <ul id="mobile-menu" class="sidenav">
+                <li><a href="index.html">Início</a></li>
+                <li class="active-mobile"><a href="team.html">Nossa Equipe</a></li>
+                <li><a href="index.html#como-funciona">Como funciona?</a></li>
+                <li><a class="sidenav-close" href="#contato">Contato</a></li>
+                <li><a href="registration.html">Cadastrar-se</a></li>
+            </ul>
         </div>
     </nav>
 
-    <div class="container center">
-        <div class="row" style="margin-top: 40px">
+    <!-- "NOSSA EQUIPE" SECTION -->
+    <div id="nossa-equipe" class="container center">
+        <div class="row">
             <h3 class="black-text">Nossa Equipe</h3>
         </div>
         <div class="row">
-            <div class="col m6">
+            <div id="member" class="col m6 s12">
+                <img src="img/robert.jpeg" alt="Roberto Jr" class="profile-picture">
+                <h5>Antônio Júnior</h5>
+                <div>CTO e Co-Fundador</div>
+            </div>
+            <div id="member" class="col m6 s12">
                 <img src="img/chris.jpeg" alt="Roberto Jr" class="profile-picture">
                 <h5>Cristiano Rogério</h5>
                 <div>CEO e Co-Fundador</div>
             </div>
-            <div class="col m6">
-                <img src="img/robert.jpeg" alt="Roberto Jr" class="profile-picture">
-                <h5>Anthony Júnior</h5>
-                <div>CTO e Co-Fundador</div>
-            </div>
         </div>
         <div class="row">
-            <div class="col m6">
+            <div id="member" class="col m6 s12">
                 <img src="img/mark.jpg" alt="Roberto Jr" class="profile-picture">
                 <h5>Marcos Rufus</h5>
                 <div>Diretor de Vendas</div>
             </div>
-            <div class="col m6">
+            <div id="member" class="col m6 s12">
                 <img src="img/scarlett.jpeg" alt="Roberto Jr" class="profile-picture">
                 <h5>Natália Romano</h5>
                 <div>Head de Comunicações</div>
@@ -62,10 +85,12 @@
         </div>
     </div>
 
-    <footer id="contato" class="page-footer light-blue darken-4">
+    <!-- FOOTER -->
+    <footer id="contato" class="page-footer light-blue darken-4 scrollspy">
+        <!-- CONTACT -->
         <div class="container">
             <div class="row center">
-                <h5 class="white-text">Entre em Contato</h5>
+                <h5 class="white-text">Contato</h5>
                 <ul>
                     <li style="margin-top: 10px">(55) 9 9000-9000</li>
                     <li style="margin-top: 5px">contato@gamealize.com</li>
@@ -84,6 +109,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- COPYRIGHT -->
         <div class="footer-copyright">
             <div class="container">
                 © 2019 Gamealize
@@ -91,7 +118,10 @@
         </div>
     </footer>
 
-    <!--JavaScript at end of body for optimized loading-->
+    <!-- MAIN SCRIPT -->
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- MATERIALIZE SCRIPT -->
     <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 

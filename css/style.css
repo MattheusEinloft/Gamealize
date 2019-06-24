@@ -1,54 +1,53 @@
+body, html {
+    height: 100%;
+}
+
+/* DESKTOP MENU */
+
 #menu {
     background: rgba(33, 33, 33, 0.8);
 }
 
-.logoTeste {
-    font-size: 50px;
+nav ul li.active {
+    background: rgba(1, 87, 155, 0.6);
 }
 
+nav ul li:hover {
+    background-color: #212121;
+}
+
+/* ---------------------------------------------------------- */
+
+/* MOBILE MENU */
+
+nav ul li.active-mobile {
+    background-color: rgba(1, 87, 155, 0.6);
+}
+
+#mobile-menu li:hover {
+    background-color: #f5f5f5;
+}
+
+/* ---------------------------------------------------------- */
+
+/* INDEX */
+
 .gamealize-logo {
-    /* font-size: calc(3vw + 3vh + .3vmin); */
-    text-shadow: none;
     transition: all .2s ease-in-out; 
 }
 
 .gamealize-logo:hover {
     transform: scale(1.1);
-    /* font-size: 2.2em;
-    color: #4fc3f7; */
-    /* text-shadow: 
-        -1px -1px 0 #4fc3f7,
-        1px -1px 0 #4fc3f7,
-        -1px 1px 0 #4fc3f7,
-        1px 1px 0 #4fc3f7; */
-}
-
-/* body {
-    background-image: url(../img/background.jpg);
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-} */
-
-body, html {
-    height: 100%;
 }
 
 .hero-background {
-    /* The image used */
     background-image: url(../img/background.jpg);
-
-    /* Full height */
     height: 100%; 
 
-    /* Center and scale the image nicely */
+    /* Center and scale the image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.text-align-center {
-    text-align: center;
 }
 
 .centered {
@@ -58,64 +57,67 @@ body, html {
     transform: translate(-50%, -50%);
 }
 
-.shadow-text {
-    /* font-size: calc(0.9vw + 0.9vh + 0.5vmin); */
-    text-shadow: 
-        -1px -1px 0 gainsboro,
-        1px -1px 0 gainsboro,
-        -1px 1px 0 gainsboro,
-        1px 1px 0 gainsboro;
+#como-funciona {
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
-.start-button {
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: calc(5px + 1.3vw);
+.items {
+    margin-top: -30px;
 }
-
-/* .icon-block {
-    padding: 0 15px;
-  }
-  .icon-block .material-icons {
-    font-size: inherit;
-  } */
 
 /* ---------------------------------------------------------- */
 
-/* Registration */
+/* REGISTRATION */
 
-.bg {
-    /* Full height */
-    height: 100%;
+.registration-header {
+    padding-bottom: 94px;
+    background-color: white;
+}
+
+.registration-logo {
+    margin-top: 15px;
 }
 
 .registration-box {
-    /* background-color: red; */
-
     margin-top: 50px;
 }
 
-#title {
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-size: calc(5px + 1.5vw);
-    /* font-weight: bold; */
+#registration-button {
+    margin-top: 40px;
 }
 
 /* ---------------------------------------------------------- */
 
-/* About Us */
+/* OUR TEAM */
 
-.profile-picture {
+#nossa-equipe {
+    margin-bottom: 50px;
+}
+
+#member img {
     border-radius: 50%;
     width: 200px;
     height: 200px;
-
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
 }
 
-.profile-picture:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-    transition: all .2s ease-in-out; 
+/* Mobile & Tablet */
+@media screen and (max-width: 1199.98px) {
+    #member {
+        margin-bottom: 30px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1200px) {
+    #member img {
+        filter: gray; /* IE6-9 */
+        -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    }
+
+    #member img:hover {
+        filter: none;
+        -webkit-filter: grayscale(0%);
+        transition: all .2s ease-in-out; 
+    }
 }
